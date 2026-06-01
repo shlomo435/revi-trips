@@ -123,26 +123,31 @@ export default function Destinations() {
           <p className="text-sand-600 text-center mb-6 text-sm font-body">
             בין היתר:
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {[
-              { name: 'מקסיקו', desc: 'חופים קריביים, תרבות מאיה ואוכל מדהים' },
-              { name: 'סיישל', desc: 'גן עדן טרופי עם חופים לבנים ואלמוגים' },
-              { name: 'זנזיבר', desc: 'איים אפריקאים עם מים טורקיז ותרבות עשירה' },
-              { name: 'פיליפינים', desc: 'אלפי איים, צלילה מדהימה וחופים בתולים' },
-              { name: 'ויאטנם', desc: 'נופים ירוקים, אוכל מצוין ותרבות מרתקת' },
-              { name: "באקו, אזרבייג'ן", desc: 'עיר מודרנית עם היסטוריה עשירה' },
-              { name: 'בולגריה', desc: 'חופי הים השחור, הרים ומחירים נוחים' },
-              { name: 'בלגרד, סרביה', desc: 'עיר תוססת עם חיי לילה ואוכל מעולה' },
-              { name: 'בודווה, מונטנגרו', desc: 'עיר עתיקה על חוף הים האדריאטי' },
+              { name: 'מקסיקו', desc: 'חופים קריביים, תרבות מאיה ואוכל מדהים', img: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&q=80' },
+              { name: 'סיישל', desc: 'גן עדן טרופי עם חופים לבנים ואלמוגים', img: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=400&q=80' },
+              { name: 'זנזיבר', desc: 'איים אפריקאים עם מים טורקיז ותרבות עשירה', img: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=400&q=80' },
+              { name: 'פיליפינים', desc: 'אלפי איים, צלילה מדהימה וחופים בתולים', img: 'https://images.unsplash.com/photo-1551244072-5d12893278bc?w=400&q=80' },
+              { name: 'ויאטנם', desc: 'נופים ירוקים, אוכל מצוין ותרבות מרתקת', img: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80' },
+              { name: "באקו, אזרבייג'ן", desc: 'עיר מודרנית עם היסטוריה עשירה', img: 'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=400&q=80' },
+              { name: 'בולגריה', desc: 'חופי הים השחור, הרים ומחירים נוחים', img: 'https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=400&q=80' },
+              { name: 'בלגרד, סרביה', desc: 'עיר תוססת עם חיי לילה ואוכל מעולה', img: 'https://images.unsplash.com/photo-1566233191408-27e5b1999a01?w=400&q=80' },
+              { name: 'בודווה, מונטנגרו', desc: 'עיר עתיקה על חוף הים האדריאטי', img: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=400&q=80' },
             ].map((dest) => (
               <div
                 key={dest.name}
-                className="bg-white rounded-xl p-3 border border-blue-100 flex items-start gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default"
+                className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-default aspect-[4/3] group"
               >
-                <span className="text-lg mt-0.5">✈️</span>
-                <div>
-                  <div className="font-heading font-bold text-ocean-800 text-sm">{dest.name}</div>
-                  <div className="font-body text-xs text-sand-600 leading-relaxed mt-0.5">{dest.desc}</div>
+                <img
+                  src={dest.img}
+                  alt={dest.name}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 right-0 left-0 p-3 text-right">
+                  <div className="font-heading font-bold text-white text-sm drop-shadow">{dest.name}</div>
+                  <div className="font-body text-xs text-white/80 leading-relaxed mt-0.5">{dest.desc}</div>
                 </div>
               </div>
             ))}
