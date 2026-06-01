@@ -9,6 +9,7 @@ import WhatsAppGroup from '@/components/sections/WhatsAppGroup'
 import Social from '@/components/sections/Social'
 import Contact from '@/components/sections/Contact'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+import AccessibilityWidget from '@/components/AccessibilityWidget'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Contact />
       </main>
       <FloatingWhatsApp />
+      <AccessibilityWidget />
     </>
   )
 }

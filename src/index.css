@@ -47,6 +47,47 @@
   --color-gold-100: #faf4d6;
 }
 
+/* ── Accessibility overrides ── */
+html.a11y-font-lg  { font-size: 120% !important; }
+html.a11y-font-xl  { font-size: 140% !important; }
+
+html.a11y-contrast,
+html.a11y-contrast body {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+html.a11y-contrast * {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+html.a11y-contrast img {
+  filter: brightness(0.85) contrast(1.2) !important;
+}
+html.a11y-contrast button,
+html.a11y-contrast a {
+  outline: 1px solid #fff !important;
+}
+
+html.a11y-grayscale,
+html.a11y-grayscale body {
+  filter: grayscale(100%) !important;
+}
+
+html.a11y-links a {
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  font-weight: 700 !important;
+  outline: 1px dashed currentColor !important;
+  outline-offset: 2px !important;
+}
+
+html.a11y-spacing *:not(html):not(body):not(head) {
+  line-height: 1.9 !important;
+  letter-spacing: 0.04em !important;
+  word-spacing: 0.1em !important;
+}
+
 @layer base {
   *, *::before, *::after {
     box-sizing: border-box;
