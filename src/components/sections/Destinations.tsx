@@ -126,13 +126,13 @@ export default function Destinations() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {[
               { name: 'מקסיקו', desc: 'חופים קריביים, תרבות מאיה ואוכל מדהים', img: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&q=80' },
-              { name: 'סיישל', desc: 'גן עדן טרופי עם חופים לבנים ואלמוגים', img: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=400&q=80' },
-              { name: 'זנזיבר', desc: 'איים אפריקאים עם מים טורקיז ותרבות עשירה', img: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=400&q=80' },
-              { name: 'פיליפינים', desc: 'אלפי איים, צלילה מדהימה וחופים בתולים', img: 'https://images.unsplash.com/photo-1551244072-5d12893278bc?w=400&q=80' },
-              { name: 'ויאטנם', desc: 'נופים ירוקים, אוכל מצוין ותרבות מרתקת', img: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80' },
-              { name: "באקו, אזרבייג'ן", desc: 'עיר מודרנית עם היסטוריה עשירה', img: 'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=400&q=80' },
-              { name: 'בולגריה', desc: 'חופי הים השחור, הרים ומחירים נוחים', img: 'https://images.unsplash.com/photo-1586500036706-41963de24d8b?w=400&q=80' },
-              { name: 'בלגרד, סרביה', desc: 'עיר תוססת עם חיי לילה ואוכל מעולה', img: 'https://images.unsplash.com/photo-1566233191408-27e5b1999a01?w=400&q=80' },
+              { name: 'סיישל', desc: 'גן עדן טרופי עם חופים לבנים ואלמוגים', img: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&q=80' },
+              { name: 'זנזיבר', desc: 'איים אפריקאים עם מים טורקיז ותרבות עשירה', img: 'https://images.unsplash.com/photo-1504601772602-e3cd1884c5e3?w=400&q=80' },
+              { name: 'פיליפינים', desc: 'אלפי איים, צלילה מדהימה וחופים בתולים', img: 'https://images.unsplash.com/photo-1510525009512-ad7fc13d5a5d?w=400&q=80' },
+              { name: 'ויאטנם', desc: 'נופים ירוקים, אוכל מצוין ותרבות מרתקת', img: 'https://images.unsplash.com/photo-1557750255-c76072a7aad1?w=400&q=80' },
+              { name: "באקו, אזרבייג'ן", desc: 'עיר מודרנית עם היסטוריה עשירה', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80' },
+              { name: 'בולגריה', desc: 'חופי הים השחור, הרים ומחירים נוחים', img: 'https://images.unsplash.com/photo-1562988079-b5b58b34db93?w=400&q=80' },
+              { name: 'בלגרד, סרביה', desc: 'עיר תוססת עם חיי לילה ואוכל מעולה', img: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=400&q=80' },
               { name: 'בודווה, מונטנגרו', desc: 'עיר עתיקה על חוף הים האדריאטי', img: 'https://images.unsplash.com/photo-1555990793-da11153b2473?w=400&q=80' },
             ].map((dest) => (
               <div
