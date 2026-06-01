@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Frank Ruhl Libre", serif;
+  --font-body: "Heebo", sans-serif;
+
+  --color-ocean-950: #071524;
+  --color-ocean-900: #0d2040;
+  --color-ocean-800: #0f3460;
+  --color-ocean-700: #1a4a7a;
+  --color-ocean-600: #1e5f9e;
+  --color-ocean-500: #2176c2;
+  --color-ocean-400: #3a95d5;
+  --color-ocean-300: #62b4e5;
+  --color-ocean-200: #9dd3f2;
+  --color-ocean-100: #d4eefb;
+  --color-ocean-50:  #eef7fd;
+
+  --color-teal-600: #0891b2;
+  --color-teal-500: #06b6d4;
+  --color-teal-400: #22d3ee;
+  --color-teal-300: #67e8f9;
+
+  --color-sand-950: #1c1208;
+  --color-sand-900: #2d1f0e;
+  --color-sand-800: #4a3520;
+  --color-sand-700: #6b4f32;
+  --color-sand-600: #8b6a44;
+  --color-sand-500: #a8845c;
+  --color-sand-400: #c4a47c;
+  --color-sand-300: #d9c0a0;
+  --color-sand-200: #ecdcc6;
+  --color-sand-100: #f5ede0;
+  --color-sand-50:  #faf5ee;
+
+  --color-coral-700: #c2400a;
+  --color-coral-600: #e05214;
+  --color-coral-500: #f4723a;
+  --color-coral-400: #f89468;
+  --color-coral-300: #fbb799;
+
+  --color-gold-600: #9a7209;
+  --color-gold-500: #c49a20;
+  --color-gold-400: #d4af37;
+  --color-gold-300: #e8d07a;
+  --color-gold-200: #f4e6a8;
+  --color-gold-100: #faf4d6;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+  }
+
+  body {
+    font-family: "Heebo", sans-serif;
+    background-color: #faf5ee;
+    color: #2d1f0e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Frank Ruhl Libre", serif;
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100svh;
+  }
+}
