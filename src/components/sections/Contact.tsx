@@ -7,7 +7,7 @@ const WA_LINK = 'https://wa.me/972527097160?text=%D7%94%D7%99%D7%99%20%D7%A8%D7%
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-ocean-950 relative overflow-hidden">
+    <section id="contact" className="py-20 md:py-16 bg-ocean-950 relative overflow-hidden">
       {/* Decorative gradient orbs */}
       <div className="absolute top-0 start-0 w-72 h-72 rounded-full bg-teal-500/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 end-0 w-72 h-72 rounded-full bg-coral-500/10 blur-3xl pointer-events-none" />

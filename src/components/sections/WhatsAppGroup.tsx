@@ -13,7 +13,7 @@ const perks = [
 
 export default function WhatsAppGroup() {
   return (
-    <section id="deals" className="py-20 md:py-28 bg-[#075e54] overflow-hidden relative">
+    <section id="deals" className="py-20 md:py-16 bg-[#075e54] overflow-hidden relative">
       {/* Background texture */}
       <div
         className="absolute inset-0 opacity-5"

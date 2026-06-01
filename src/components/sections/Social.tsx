@@ -25,7 +25,7 @@ const socials: { name: string; handle: string; href: string; Icon: SvgIcon; bg: 
 
 export default function Social() {
   return (
-    <section id="social" className="py-20 md:py-28 bg-white">
+    <section id="social" className="py-20 md:py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

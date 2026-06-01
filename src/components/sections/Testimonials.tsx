@@ -87,7 +87,7 @@ export default function Testimonials() {
   const current = items[currentIndex]
 
   return (
-    <section id="testimonials" className="py-20 md:py-32 bg-sand-50 overflow-hidden">
+    <section id="testimonials" className="py-20 md:py-16 bg-sand-50 overflow-hidden">
       <div className="max-w-5xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

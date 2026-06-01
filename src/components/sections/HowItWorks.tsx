@@ -41,7 +41,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="process" className="py-20 md:py-32 bg-ocean-900 overflow-hidden relative">
+    <section id="process" className="py-20 md:py-16 bg-ocean-900 overflow-hidden relative">
       {/* Decorative background */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent" />

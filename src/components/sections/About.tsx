@@ -22,7 +22,7 @@ const fadeInUp = {
 
 export default function About() {
   return (
-    <section id="about" className="py-20 md:py-32 bg-white overflow-hidden">
+    <section id="about" className="py-20 md:py-16 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Image side */}

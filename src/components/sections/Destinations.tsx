@@ -110,6 +110,54 @@ export default function Destinations() {
             </motion.button>
           ))}
         </div>
+
+        {/* More destinations */}
+        <div
+          className="mt-10 p-8 rounded-2xl border border-slate-200 text-right"
+          style={{ background: 'linear-gradient(135deg, #f0f9ff 0%, #f0fdf4 100%)' }}
+          dir="rtl"
+        >
+          <h3 className="text-xl font-heading font-bold text-ocean-900 text-center mb-2">
+            טסים גם לכל יעד אחר בעולם!
+          </h3>
+          <p className="text-sand-600 text-center mb-6 text-sm font-body">
+            בין היתר:
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {[
+              { name: 'מקסיקו', desc: 'חופים קריביים, תרבות מאיה ואוכל מדהים' },
+              { name: 'סיישל', desc: 'גן עדן טרופי עם חופים לבנים ואלמוגים' },
+              { name: 'זנזיבר', desc: 'איים אפריקאים עם מים טורקיז ותרבות עשירה' },
+              { name: 'פיליפינים', desc: 'אלפי איים, צלילה מדהימה וחופים בתולים' },
+              { name: 'ויאטנם', desc: 'נופים ירוקים, אוכל מצוין ותרבות מרתקת' },
+              { name: "באקו, אזרבייג'ן", desc: 'עיר מודרנית עם היסטוריה עשירה' },
+              { name: 'בולגריה', desc: 'חופי הים השחור, הרים ומחירים נוחים' },
+              { name: 'בלגרד, סרביה', desc: 'עיר תוססת עם חיי לילה ואוכל מעולה' },
+              { name: 'בודווה, מונטנגרו', desc: 'עיר עתיקה על חוף הים האדריאטי' },
+            ].map((dest) => (
+              <div
+                key={dest.name}
+                className="bg-white rounded-xl p-3 border border-blue-100 flex items-start gap-2 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-default"
+              >
+                <span className="text-lg mt-0.5">✈️</span>
+                <div>
+                  <div className="font-heading font-bold text-ocean-800 text-sm">{dest.name}</div>
+                  <div className="font-body text-xs text-sand-600 leading-relaxed mt-0.5">{dest.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 text-center">
+            <a
+              href="https://wa.me/972527097160"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#25D366] hover:bg-[#1ebe5d] text-white font-body font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 text-sm"
+            >
+              📲 שלחו לי הודעה לכל יעד שחולמים עליו
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Modal */}

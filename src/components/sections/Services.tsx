@@ -58,7 +58,7 @@ const cardVariants = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 md:py-32 bg-sand-50">
+    <section id="services" className="py-20 md:py-16 bg-sand-50">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
