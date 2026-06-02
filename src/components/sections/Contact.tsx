@@ -30,25 +30,31 @@ export default function Contact() {
             נבנה יחד את החופשה שתרצו לזכור.
           </p>
 
-          <Button
-            variant="whatsapp"
-            size="xl"
-            asChild
-            className="gap-3 font-semibold text-lg shadow-2xl shadow-green-900/50 mb-6"
-          >
-            <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="h-6 w-6" />
-              +972-52-709-7160
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <Button
+              variant="whatsapp"
+              size="xl"
+              asChild
+              className="gap-3 font-semibold text-lg shadow-2xl shadow-green-900/50"
+            >
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-6 w-6" />
+                שלחו הודעה בוואטסאפ
+              </a>
+            </Button>
 
-          <a
-            href="tel:+972527097160"
-            className="inline-flex items-center gap-2 font-body text-white/70 hover:text-white text-sm mb-4 transition-colors"
-          >
-            <Phone className="h-4 w-4" />
-            +972-52-709-7160
-          </a>
+            <Button
+              variant="outline"
+              size="xl"
+              asChild
+              className="gap-3 font-semibold text-lg border-white/40 text-white hover:bg-white hover:text-ocean-900"
+            >
+              <a href="tel:+972527097160">
+                <Phone className="h-6 w-6" />
+                התקשרו אליי
+              </a>
+            </Button>
+          </div>
 
           <p className="font-body text-ocean-400 text-sm mb-10">
             עונה בדרך כלל תוך שעה בשעות הפעילות
