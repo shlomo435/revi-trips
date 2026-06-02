@@ -104,9 +104,22 @@ export default function About() {
               לכל שאלה, בלי עלות נוספת.
             </motion.p>
 
+            <motion.p
+              custom={4}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: '-80px' }}
+              variants={fadeInUp}
+              className="font-body text-sand-700 leading-relaxed mb-10 text-lg"
+            >
+              בשבילי זו לא רק עבודה, זו תשוקה ואהבה אמיתית למקצוע. תכנון חופשות הוא מה שאני
+              עושה הכי טוב, ומה שאני קמה אליו בכל בוקר. כשאתם מפקידים בידיי את החופשה שלכם,
+              אתם מקבלים לא רק סוכנת טיסות, אלא מישהי שאכפת לה באמת, ושעושה את זה מכל הלב.
+            </motion.p>
+
             {/* Highlights grid */}
             <motion.div
-              custom={4}
+              custom={5}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: '-80px' }}
