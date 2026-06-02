@@ -26,7 +26,9 @@ export default function Hero() {
       />
 
       {/* Dark overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-ocean-950/60 via-ocean-950/40 to-ocean-950/70" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ocean-950/70 via-ocean-950/55 to-ocean-950/80" />
+      {/* Extra uniform dark layer for text legibility */}
+      <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.45)' }} />
 
       {/* Gold shimmer top line */}
       <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent" />
@@ -48,6 +50,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
           className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6"
+          style={{ textShadow: '0 2px 16px rgba(0,0,0,0.7), 0 1px 4px rgba(0,0,0,0.9)' }}
         >
           החופשה המושלמת,
           <br />
