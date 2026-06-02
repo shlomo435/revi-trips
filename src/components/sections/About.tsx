@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import { Star, Globe, Heart, Clock } from 'lucide-react'
 
-const PORTRAIT_IMAGE =
-  'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80&auto=format&fit=crop'
+const PORTRAIT_IMAGE = '/revital.jpg'
 
 const highlights = [
   { icon: Star, label: '5 שנות ניסיון', sub: 'בליווי אישי של אלפי לקוחות' },
