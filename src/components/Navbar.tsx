@@ -29,11 +29,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const handleNav = (href: string) => {
+  const handleNav = (href: string, e?: React.MouseEvent) => {
+    e?.preventDefault()
     setOpen(false)
     setTimeout(() => {
-      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
-    }, 100)
+      const el = document.querySelector(href)
+      if (!el) return
+      const top = el.getBoundingClientRect().top + window.scrollY - 72
+      window.scrollTo({ top, behavior: 'smooth' })
+    }, 120)
   }
 
   return (
@@ -49,7 +53,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#hero"
-            onClick={() => handleNav('#hero')}
+            onClick={(e) => handleNav('#hero', e)}
             className={`font-heading font-bold text-xl transition-colors ${
               scrolled ? 'text-ocean-900' : 'text-white'
             }`}
@@ -60,9 +64,10 @@ export default function Navbar() {
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
             {links.map(({ href, label }) => (
-              <button
+              <a
                 key={href}
-                onClick={() => handleNav(href)}
+                href={href}
+                onClick={(e) => handleNav(href, e)}
                 className={`font-body text-sm font-medium transition-colors cursor-pointer ${
                   scrolled
                     ? 'text-sand-700 hover:text-ocean-700'
@@ -70,7 +75,7 @@ export default function Navbar() {
                 }`}
               >
                 {label}
-              </button>
+              </a>
             ))}
           </nav>
 
@@ -110,13 +115,14 @@ export default function Navbar() {
           >
             <nav className="flex flex-col gap-1">
               {links.map(({ href, label }) => (
-                <button
+                <a
                   key={href}
-                  onClick={() => handleNav(href)}
-                  className="text-start px-4 py-3 rounded-xl font-body font-medium text-sand-800 hover:bg-sand-50 hover:text-ocean-700 transition-colors cursor-pointer"
+                  href={href}
+                  onClick={(e) => handleNav(href, e)}
+                  className="block text-start px-4 py-3 rounded-xl font-body font-medium text-sand-800 hover:bg-sand-50 hover:text-ocean-700 transition-colors cursor-pointer"
                 >
                   {label}
-                </button>
+                </a>
               ))}
               <a
                 href={WA_LINK}

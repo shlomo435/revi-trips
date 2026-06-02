@@ -88,6 +88,10 @@ html.a11y-spacing *:not(html):not(body):not(head) {
   word-spacing: 0.1em !important;
 }
 
+section[id] {
+  scroll-margin-top: 72px;
+}
+
 @layer base {
   *, *::before, *::after {
     box-sizing: border-box;
