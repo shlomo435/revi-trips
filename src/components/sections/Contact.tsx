@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { MessageCircle } from 'lucide-react'
+import { MessageCircle, Phone } from 'lucide-react'
 import { InstagramIcon, FacebookIcon } from '@/components/icons/SocialIcons'
 import { Button } from '@/components/ui/button'
 
@@ -41,6 +41,14 @@ export default function Contact() {
               +972-52-709-7160
             </a>
           </Button>
+
+          <a
+            href="tel:+972527097160"
+            className="inline-flex items-center gap-2 font-body text-white/70 hover:text-white text-sm mb-4 transition-colors"
+          >
+            <Phone className="h-4 w-4" />
+            +972-52-709-7160
+          </a>
 
           <p className="font-body text-ocean-400 text-sm mb-10">
             עונה בדרך כלל תוך שעה בשעות הפעילות
